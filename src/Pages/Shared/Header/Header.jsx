@@ -19,7 +19,7 @@ const Header = () => {
         {navLinks}
       </ul>
     </div>
-    <NavLink to='/' className="btn rounded-none border-none text-xl">Social-Events</NavLink>
+    <NavLink to='/' className="btn rounded-none border-none text-xl ">Social-Events</NavLink>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
