@@ -1,6 +1,4 @@
-
-
-
+import PropTypes from 'prop-types'; 
 const Service = ({service}) => {
     const {name,image,price,description} = service;
     
@@ -11,12 +9,14 @@ const Service = ({service}) => {
     <h2 className="font-kode font-bold text-2xl ">{name}</h2>
     <p className="mb-5">{description}</p>
     <div className="flex justify-between items-center">
-        <p className="text-2xl font-kode font-bold text-green-500">${price}</p>
+        <p className="text-2xl font-kode font-bold text-green-500">$ {price}</p>
       <button className="btn bg-blue-400 text-white rounded-md">Show Details</button>
     </div>
   </div>
 </div>
     );
 };
-
 export default Service;
+Service.propTypes = {
+    service:PropTypes.object.isRequired
+}
